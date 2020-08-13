@@ -24,6 +24,7 @@ ReactDOM.render(
         domain={process.env.AUTH0_DOMAIN as string}
         client_id={process.env.AUTH0_CLIENT_ID as string}
         redirect_uri={window.location.origin}
+        cacheLocation="localstorage"
       >
         <App history={history} />
       </Auth0Provider>
